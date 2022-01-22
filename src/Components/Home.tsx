@@ -4,6 +4,7 @@ import { Users } from "./Users"
 import { connect } from "react-redux"
 import ButtonCounter from "./ButtonCounter"
 import HoverCounter from "./HoverCounter"
+import { useState } from "react"
 
 function mapStateToProps(state:any) {
     return {
@@ -12,7 +13,12 @@ function mapStateToProps(state:any) {
 }
 
 const Home = () => {
+    const [state,setState] = useState({a:"aaa"})
+    const func = () => {
+        setState({a:"aaa"})
+    }
     const navigator = useNavigate()
+    console.log('component is rendered')
     return (
         <>
             <h1>Click on this button to view <i>Posts</i></h1>
@@ -29,6 +35,7 @@ const Home = () => {
             />
             {/* <ButtonCounter />
             <HoverCounter /> */}
+            <button onClick={func}>update the counter</button>
         </>
     )
 }
