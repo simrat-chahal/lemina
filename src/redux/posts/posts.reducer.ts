@@ -10,7 +10,6 @@ const initialState = {
 }
 
 const postsReducer = (state=initialState,action:any) => {
-    console.log("postsReducer",action)
     const {type,payload} = action
     switch (type) {
         case SET_POST_DATA:

@@ -8,7 +8,6 @@ const Posts = () => {
     // const [posts, setPosts] = useState<Array<postsInterface>>([]);
     const dispatch = useDispatch();
     const postsData = useSelector((state:any)=>state.postsState.posts);
-    console.log('posts data',postsData)
 
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/posts')

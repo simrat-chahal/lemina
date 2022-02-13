@@ -4,7 +4,6 @@ import { propsPattern } from "../typescript structures/types"
 
 
 const HoverCounter = (props:propsPattern) => {
-    console.log(props,"ppppppppppppp")
     return (
         <>
             <h1>Hover Counter</h1>

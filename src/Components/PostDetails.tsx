@@ -12,7 +12,6 @@ function mapStateToProps(state:any) {return {globalState: state}}
 
 
 const PostDetails = (props:any) => {
-    console.log(props,"dsfdsfsdfsdf")
     const params = useParams()
     // const [postData, setPostData] = useState<postsDataInterface>()
     const dispatch = useDispatch()

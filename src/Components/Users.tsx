@@ -6,7 +6,6 @@ import { setUsersData } from "../redux/users/users.actions"
 export const Users = () => {
     const dispatch = useDispatch()
     const usersList = useSelector((state:any)=>state.usersState.users)
-    console.log("userlist",usersList)
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
