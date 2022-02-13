@@ -17,7 +17,6 @@ export const UserDetails = () => {
         
     }
     , [])
-    console.log(userDetails,"usserlist")
     return (<>
                 {/* <button onClick={()=>loadUserDetails}>Load User Data</button> */}
                 <table style={{textAlign: "center"}}>

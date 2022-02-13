@@ -7,7 +7,6 @@ const initialState = {
 }
 
 const usersReducer = (state=initialState,action:any) => {
-    console.log("users reducer",action)
     const {type,payload} = action
     switch (type) {
         case userTypes.SET_USERS_DATA:
